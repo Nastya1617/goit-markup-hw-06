@@ -210,6 +210,7 @@ ul {
 .listt-features:last-child{
   margin-bottom: 0;
 }
+/**--------Team--------*/
 .team {
   background-color: #f4f4fd;
   padding: 96px 0;
@@ -277,6 +278,7 @@ ul {
 .team-svg:focus {
   background-color: #404bbf;
 }
+/**--------Portfolio--------*/
 .portfolio {
   padding: 96px 0 96px 0;
 }
@@ -865,12 +867,19 @@ height: 56px;
   .title-button{
     padding: 112px 36px;
   }
+  .title-features{
+    text-align: left;
+  }
   .features-container ul {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .text-features{
+    width: 340px;
   }
   .features-container li {
     margin-right: 24px;
-    margin-bottom: 0;
+    margin-bottom: 72px;
   }
   .features-container li:last-child {
     margin-right: 0px;
@@ -885,6 +894,8 @@ height: 56px;
   }
   .list-team {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .img-team {
     margin-right: 24px;
@@ -898,7 +909,8 @@ height: 56px;
   .portfolio-container ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px; 
+    gap: 24px 72px;
+    justify-content: center;
   }
 }
  @media screen and (min-width: 1158px) {
@@ -958,6 +970,7 @@ height: 56px;
   }
   .list-team {
     display: flex;
+    flex-wrap: nowrap;
   }
   .img-team {
     margin-right: 24px;
