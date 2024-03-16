@@ -793,10 +793,8 @@ height: 56px;
     gap: 24px;
     margin-bottom: 48px;
   }
-  /* address {
-    font-style: italic;
-  } */
-  .address-link {
+  .address-link { 
+    font-style: normal;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
