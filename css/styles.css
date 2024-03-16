@@ -33,7 +33,7 @@ ul {
   max-width: 320px;
   padding: 0 16px;
   margin: auto;
-  align-items: center;
+  /* align-items: center; */
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -58,8 +58,9 @@ ul {
   display: flex;
   /* padding-left: 156px;
   padding-right: 156px; */
+  align-items: center;
   padding: 0 15px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .logo-nav {
   /* padding: 25px 0px 25px 0px; */
@@ -396,10 +397,15 @@ ul {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  /* align-items: baseline; */
   /* align-items: center; */
-  gap: 72px;
+  /* gap: 72px; */
 }
+/* .column{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
 .logo-footerrr {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -444,8 +450,8 @@ ul {
 .social-media-footer {
   display: flex;
   gap: 16px;
-  /* align-items: center;
-  justify-content: center; */
+   /* align-items: center;
+  justify-content: center;  */
 }
 .media-footer {
   width: 40px;
@@ -684,9 +690,11 @@ height: 56px;
 }
 .backdrop-button-icon{margin-left: 16px;
 }
-
      /* Mobile close */
 @media screen and (max-width: 767px) {
+  .logo-container{
+    justify-content: space-between;
+  }
   .mobile-menu{
     position: fixed;
     top: 0;
@@ -832,8 +840,24 @@ height: 56px;
     gap: 72px 24px;
     max-width: 530px;
   } */
+  .list-features{
+    flex-direction: column;
+  }
+  .container {
+    align-items: center;
+  }
+  .footer-container{
+    gap: 72px;
+  }
 }
       /* Mobile close */
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .footer-container {
+      gap: 72px 24px;
+      padding-left: 108px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .logo{
@@ -949,8 +973,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 .footer-container{
   flex-direction: initial;
   flex-wrap: wrap;
-  gap: 24px;
-  padding-left: 108px;
+  /* gap: 72px 24px;
+  padding-left: 108px; */
 }
 .column{
   display: inline-block;
@@ -980,6 +1004,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
 }
  @media screen and (min-width: 1158px) {
+  .title-button{
+    padding: 188px 472px;
+  }
   .logo{
     margin-right: 76px;
   }
@@ -1059,5 +1086,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   }
   .social-footer{
     margin-left: 0;
+  }
+  .social{
+    margin-right: 80px;
   }
  }
