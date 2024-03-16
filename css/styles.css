@@ -761,7 +761,7 @@ height: 56px;
     margin-bottom: 40px;
   }
   .mobile-nav-menu-li:last-child{
-    margin-bottom: 168px;
+    margin-bottom: 0;
   }
   .nav-link-mobile {
     color: #2e2f42;
@@ -793,6 +793,9 @@ height: 56px;
     gap: 24px;
     margin-bottom: 48px;
   }
+  /* address {
+    font-style: italic;
+  } */
   .address-link {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
