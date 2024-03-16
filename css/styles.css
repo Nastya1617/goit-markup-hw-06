@@ -42,7 +42,7 @@ ul {
 }
 @media screen and (min-width: 1128px) {
   .container {
-    max-width: 1128px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -99,9 +99,12 @@ ul {
   font-style: normal;
   align-items: center;
   margin-left: auto;
-  padding: 25px 0px 25px 0px;
+  /* padding: 25px 0px 25px 0px; */
   display: none;
 } 
+.current{
+  position: relative;
+}
 /* .address-list {
   display: flex;
   gap: 40px;
@@ -197,7 +200,7 @@ ul {
 .title-features {
   color: #2e2f42;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
@@ -205,8 +208,8 @@ ul {
 }
 .list-features{
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  /* flex-direction: column; */
+  gap: 72px 24px;
 }
 .features-icon{
   display: none;
@@ -219,7 +222,6 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
 }
 .listt-features{
   /* margin-bottom: 72px; */
@@ -244,7 +246,7 @@ ul {
   margin-bottom: 72px;
 }
 .img-team {
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -273,7 +275,7 @@ ul {
 .list-team{
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 64px 24px;
   justify-content: center;
 }
 .svg-team {
@@ -395,7 +397,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  align-items: center;
+  /* align-items: center; */
   gap: 72px;
 }
 .logo-footerrr {
@@ -465,10 +467,10 @@ ul {
 .media:focus {
   background-color: #31d0aa;
 }
-.footer {
+/* .footer {
   background: #2e2f42;
-  padding: 100px 0;
-}
+  padding: 96px 0;
+} */
 /* .column {
   margin-right: 120px;
 } */
@@ -639,7 +641,8 @@ height: 56px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  text-align: center;
+  /* text-align: center; */
+
 }
 .backdrop-footer-form{
   display: flex;
@@ -686,16 +689,18 @@ height: 56px;
   .mobile-menu{
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    z-index: 100%;
     background-color: #ffffff;
-    padding: 24px;
+    padding: 72px 16px 48px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    opacity: 0;
+    /* opacity: 0; */
     visibility: hidden;
-    pointer-events: none;
+    /* pointer-events: none; */
 
     /* padding: 24px;
     display: flex;
@@ -718,6 +723,7 @@ height: 56px;
   }
   .mobile-menu-container{
     position: relative;
+    height: 100%;
   }
   .mobile-menu-close-btn{
     position: absolute;
@@ -736,9 +742,9 @@ height: 56px;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .mobile-menu-nav{
+  /* .mobile-menu-nav{
     padding-top: 72px;
-  }
+  } */
   .mobile-nav-menu-li{
     margin-bottom: 40px;
   }
@@ -855,6 +861,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    display: block;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -906,6 +913,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   }
   .title-features{
     text-align: initial;
+    font-weight: 700;
   }
   .features-container ul {
     flex-direction: row;
@@ -916,7 +924,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   }
   .img-team{
     /* width: calc((100% - 24px) / 2); */
-    margin-bottom: 64px;
+    /* margin-bottom: 64px; */
   }
   .listt-features {
     flex-basis: calc((100% - 24px) / 2);
@@ -930,9 +938,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   .img-portfolio{
     width: calc((100% - 24px) / 2);
   }
-  .portfolio {
+  /* .portfolio {
     padding-bottom: 96px;
-  }
+  } */
  /*-------------- FUOOTER-----------*/
  .footer {
   padding: 96px 0;
@@ -941,6 +949,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   flex-direction: initial;
   flex-wrap: wrap;
   gap: 24px;
+  padding-left: 108px;
 }
 .column{
   display: inline-block;
@@ -956,7 +965,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
 .social{
   display: inline-block;
-  transform: translateY(-20px);
+  /* transform: translateY(-20px); */
 }
 .social-footer{
   text-align: start;
