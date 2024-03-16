@@ -829,10 +829,6 @@ height: 56px;
   .nav-link:focus {
     color: #404bbf;
   }
-  .current {
-    position: relative;
-    color: #404bbf;
-  }
   .current::after {
     content: "";
     position: absolute;
@@ -884,6 +880,9 @@ height: 56px;
   .text-features{
     width: 340px;
   }
+  .text-team-card{
+    margin-bottom: 8px;
+  }
   .features-container li {
     margin-right: 24px;
     margin-bottom: 72px;
@@ -916,8 +915,7 @@ height: 56px;
   .portfolio-container ul {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 24px;
-    column-gap: 72px;
+    gap: 72px 24px;
     justify-content: center;
   }
 }
