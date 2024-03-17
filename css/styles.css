@@ -864,6 +864,7 @@ height: 56px;
   } */
   .footer-container{
     gap: 72px;
+    align-items: center;
   }
   .label-span{
     margin-right: 8px;
