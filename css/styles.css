@@ -967,7 +967,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     max-width: 496px;
   }
   .title-button{
-    padding: 112px 36px;
+    padding: 112px 0px;
   }
   .title-features{
     text-align: initial;
@@ -1038,7 +1038,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
  @media screen and (min-width: 1158px) {
   .title-button{
-    padding: 188px 472px;
+    padding: 188px 0px;
   }
   .logo{
     margin-right: 76px;
@@ -1123,4 +1123,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   .social{
     margin-right: 80px;
   }
+  @media screen and (min-resolution: 192dpi) and (min-width: 1158px){
+    .title-button {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+   }
  }
+}
